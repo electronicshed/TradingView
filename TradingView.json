@@ -1,0 +1,17 @@
+{
+      "autosize": true,
+      "symbol": "INDEX:FTSE",
+      "interval": "W",
+      "timezone": "Etc/UTC",
+      "theme": "White",
+      "style": "2",
+      "locale": "en",
+      "toolbar_bg": "#f1f3f6",
+      "enable_publishing": false,
+      "allow_symbol_change": true,
+      "watchlist": [
+        "LSE:GSK",
+        "LSE:NG."
+      ],
+      "hideideas": true
+    }
