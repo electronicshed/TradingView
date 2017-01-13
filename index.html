@@ -26,60 +26,24 @@
 <body>
   
     
-<!-- TradingView Widget BEGIN -->
-<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-
-    
-<script type="text/javascript">
-    
-/*
-
-    new TradingView.widget({
-      "autosize": true,
-      "symbol": "INDEX:FTSE",
-      "interval": "W",
-      "timezone": "Etc/UTC",
-      "theme": "White",
-      "style": "2",
-      "locale": "en",
-      "toolbar_bg": "#f1f3f6",
-      "enable_publishing": false,
-      "allow_symbol_change": true,
-      "watchlist": [
-        "LSE:GSK",
-        "LSE:NG."
-      ],
-      "hideideas": true
-    });
-*/    
-    
-</script>
-<!-- TradingView Widget END -->  
-  
-  
-    
-<script>
+    <!-- TradingView Widget BEGIN -->
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
 
 
-		$.ajax({
-			url : "https://tradingview-403fd.firebaseio.com/.json",
-			success : function(data) {
-               console.log(data);
-                
-                new TradingView.widget(data);
+
+    <script>
+
+        $.ajax({
+            url : "https://tradingview-403fd.firebaseio.com/.json",
+            success : function(data) {
+                console.log(data);    
+                    new TradingView.widget(data);
+                },
+                async : false
+        });
+
+     </script>
    
-            },
-			async : false
-		});
-    
- </script>
-   
-    
-    
     
 </body>
 </html>
-
-
-
-
